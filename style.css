@@ -1,0 +1,61 @@
+.container{
+    display: grid;
+    grid-template-areas:"header header header-side"
+                        "main-one main-one sidebar-one"
+                        "main-two main-two sidebar-two"
+                        "main-three main-three blank"
+                        "main-four main-four main-four"
+                        "footer footer footer";
+
+}
+
+.img-one{
+    background: url("/assets/huntington.jpg");
+    background-size: cover; /* <-- background size */
+    background-position: center; /* <-- background position */
+}
+.container > *{
+    border: 2px solid black;
+
+}
+.header{
+    grid-area: header;
+    height:317px;
+}
+.header-side{
+    grid-area: header-side;
+}
+.main-one{
+    grid-area: main-one;
+    background-color: white;
+}
+.main-two{
+    grid-area: main-two;
+    background-color:rgba(169, 211, 195, 0.726);
+
+}
+.main-three{
+    grid-area: main-three;
+    background-color: white;
+
+}
+.main-four{
+    grid-area: main-four;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+.blank{
+    grid-area: blank;
+    background-color:rgb(194, 212, 205);
+}
+.sidebar-one{
+    grid-area: sidebar-one;
+    background-color:rgb(194, 212, 205);
+}
+.sidebar-two{
+    grid-area: sidebar-two;
+    background-color:rgba(131, 185, 166, 0.74);
+}
